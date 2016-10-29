@@ -6,11 +6,11 @@
 
     <groupId>javaGuard</groupId>
     <artifactId>nl.marcenschede.guard</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <name>Java Guard function</name>
     <description>
-        This library allows developers to use Swift-like guard function.
+        JavaGuard library allows developers to use Swift-like guard function.
         The guard function distinct from the classic 'if(false) throw new Exception()' pattern by the way the condition is handled.
 
         The guard function executes the exception when the condition is not met.
@@ -34,6 +34,10 @@
             <distribution>repo</distribution>
         </license>
     </licenses>
+
+    <scm>
+        <url>https://github.com/JavaGuard/Guard.git</url>
+    </scm>
 
     <dependencies>
         <dependency>
