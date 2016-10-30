@@ -4,20 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>javaGuard</groupId>
-    <artifactId>nl.marcenschede.guard</artifactId>
+    <groupId>functionalUtils</groupId>
+    <artifactId>nl.marcenschede</artifactId>
     <version>1.0</version>
 
     <name>Java Guard function</name>
     <description>
-        JavaGuard library allows developers to use Swift-like guard function.
-        The guard function distinct from the classic 'if(false) throw new Exception()' pattern by the way the condition is handled.
-
-        The guard function executes the exception when the condition is not met.
-        This implies that the condition can be formulated in a positive way;
-        e.g. the condition can be formulated in a way that it describes what is expected.
-
-        This is just the way Shift-way :-)
+        Small utility library providing all kinds of functional utils
     </description>
     <url>http://maven.apache.org</url>
 
@@ -36,7 +29,7 @@
     </licenses>
 
     <scm>
-        <url>https://github.com/JavaGuard/Guard.git</url>
+        <url>https://github.com/gember-invoicing/FunctionalUtils.git</url>
     </scm>
 
     <dependencies>
