@@ -1,4 +1,4 @@
-# FunctionalUtil
+# FunctionalUtils
 
 Small utility library providing all kinds of functional utils
 
