@@ -9,25 +9,33 @@ public class GuardTest {
     @Test
     public void shouldNotExecuteSupplier() {
         guard(true, () -> {
-            throw new TestException();
+            throw new GuardTest.TestException();
         });
     }
 
-    @Test(expected = TestException.class)
+    @Test(expected = GuardTest.TestException.class)
     public void shouldExecuteSupplier() {
         guard(false, () -> {
-            throw new TestException();
+            throw new GuardTest.TestException();
         });
     }
 
     @Test
     public void shouldNotExcept() {
-        guard(true, TestException.class);
+        guard(true, GuardTest.TestException.class);
     }
 
-    @Test(expected = TestException.class)
-    public void shouldExcept() {
-        guard(false, TestException.class);
+    @Test(expected = GuardTest.TestException.class)
+    public void expectException() {
+        guard(false, GuardTest.TestException.class);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void illegalArgumentException() {
+        guard(false);
+    }
+
+    public static class TestException extends RuntimeException {
     }
 
 }

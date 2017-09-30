@@ -10,6 +10,8 @@ import java.util.function.Supplier;
  */
 public class Guard {
 
+    private Guard() {}
+
     /**
      * Executes the supplier when the condition is not met
      *
@@ -33,7 +35,17 @@ public class Guard {
                 throw exceptionClass.newInstance();
 
         } catch (InstantiationException | IllegalAccessException e) {
+            throw new IllegalArgumentException();
         }
     }
 
+    /**
+     * Raises a runtime exception when the condition is not met
+     *
+     * @param condition Result of the condition validation
+     */
+    public static void guard(boolean condition) {
+        if(!condition)
+            throw new IllegalArgumentException();
+    }
 }

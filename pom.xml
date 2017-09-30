@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>functionalUtils</groupId>
+    <groupId>javaguard</groupId>
     <artifactId>nl.marcenschede</artifactId>
     <version>1.0</version>
 
@@ -13,6 +13,11 @@
         Small utility library providing all kinds of functional utils
     </description>
     <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+    </properties>
 
     <contributors>
         <contributor>
@@ -29,7 +34,7 @@
     </licenses>
 
     <scm>
-        <url>https://github.com/gember-invoicing/FunctionalUtils.git</url>
+        <url>https://github.com/gember-invoicing/JavaGuard.git</url>
     </scm>
 
     <dependencies>
@@ -40,11 +45,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>1.8</java.version>
-    </properties>
 
     <build>
         <plugins>
